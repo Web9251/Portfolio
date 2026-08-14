@@ -19,6 +19,7 @@ export async function submitContactForm(
     })
 
     const result = await response.json()
+    console.log("🚀 ~ submitContactForm ~ result:", result)
 
     if (result.success) {
       return { success: true }

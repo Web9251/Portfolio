@@ -1,4 +1,0 @@
-- pp motion
-- progress animation
-- nav dropdown
-- contact form functionality

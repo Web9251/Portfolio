@@ -27,6 +27,7 @@ function ContactForm() {
 
   const submitHandler = async (formData: ContactFields) => {
     const result = await submitContactForm(formData)
+    console.log("🚀 ~ submitHandler ~ result:", result)
 
     if (result.success) {
       toast.success("Message sent! I'll get back to you soon.")

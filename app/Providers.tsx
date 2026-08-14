@@ -2,6 +2,7 @@
 
 import { ThemeProvider } from "@/app/theme-provider"
 import { ReactNode } from "react"
+import { Toaster } from "sonner"
 
 function Providers({ children }: { children: ReactNode }) {
   return (
@@ -12,6 +13,8 @@ function Providers({ children }: { children: ReactNode }) {
         enableSystem
         disableTransitionOnChange
       >
+        <Toaster />
+
         {children}
       </ThemeProvider>
     </>
