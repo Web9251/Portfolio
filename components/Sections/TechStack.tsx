@@ -1,11 +1,9 @@
-import { Marquee } from "@/components/marquee"
+import { Marquee } from "@/components/home/marquee"
 import {
   siCss,
-  siExpress,
   siJavascript,
   SimpleIcon,
   siNextdotjs,
-  siNodedotjs,
   siPostgresql,
   siPrisma,
   siReact,
@@ -17,21 +15,17 @@ const row1 = [
   { name: "React", Icon: siReact },
   { name: "Next.js", Icon: siNextdotjs },
   { name: "TypeScript", Icon: siTypescript },
-  { name: "Node.js", Icon: siNodedotjs },
   { name: "PostgreSQL", Icon: siPostgresql },
   { name: "Tailwind", Icon: siTailwindcss },
   { name: "Javascript", Icon: siJavascript },
   { name: "CSS3", Icon: siCss },
-  { name: "Express", Icon: siExpress },
   { name: "Prisma", Icon: siPrisma },
 ]
 
 function BrandIcon({ icon, size = 32 }: { icon: SimpleIcon; size: number }) {
-  // Simple Icons gives some brands a pure black/white hex (Next.js, Express, GitHub, Vercel...)
-  // which breaks on opposite-theme backgrounds. Override those specifically.
   const monochrome = ["000000", "ffffff"]
   const fillColor = monochrome.includes(icon.hex.toLowerCase())
-    ? "currentColor" // inherits text color, which you control via dark mode
+    ? "currentColor"
     : `#${icon.hex}`
 
   return (
@@ -73,7 +67,6 @@ function TechStack() {
           ))}
         </Marquee>
 
-        {/* Fade edges */}
         <div
           className='pointer-events-none absolute inset-y-0 left-0 w-16
                       bg-linear-to-r from-background/50'

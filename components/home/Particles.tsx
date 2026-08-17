@@ -7,7 +7,6 @@ import type { ISourceOptions, Engine } from "@tsparticles/engine"
 import { useTheme } from "next-themes"
 import { useMemo } from "react"
 
-// defined once, outside the component — stable reference across renders
 const initParticles = async (engine: Engine) => {
   await loadSlim(engine)
 }

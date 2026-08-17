@@ -20,7 +20,6 @@ export function ProjectCard({
   title,
   description,
   tags,
-  category,
   image,
   liveUrl,
   codeUrl,

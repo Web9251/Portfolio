@@ -25,8 +25,8 @@ export async function sendContactEmail(
 
   try {
     const { error } = await resend.emails.send({
-      from: "Portfolio Contact <onboarding@resend.dev>", // swap for your verified domain
-      to: "you@yourdomain.com", // your inbox
+      from: "Portfolio Contact <onboarding@resend.dev>",
+      to: "me@mydomain.com",
       replyTo: email,
       subject: `New message from ${name}`,
       text: `From: ${name} <${email}>\n\n${message}`,

@@ -1,9 +1,9 @@
 "use client"
 
-import { AvatarContainer } from "@/components/AvatarContainer"
+import { AvatarContainer } from "@/components/home/AvatarContainer"
 import { useTypingEffect } from "@/hooks/useTypingEffect"
 import { Button } from "@/components/ui/button"
-import { ParticlesBackground } from "../Particles"
+import { ParticlesBackground } from "@/components/home/Particles"
 import { downloadCV } from "@/lib/utils"
 import { Download } from "lucide-react"
 

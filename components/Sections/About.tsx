@@ -8,7 +8,6 @@ import { Download, Mail } from "lucide-react"
 function About() {
   return (
     <section id='about' className='py-24 px-4 max-w-4xl mx-auto scroll-mt-3'>
-      {/* Heading */}
       <p className='text-xs uppercase tracking-widest text-muted-foreground mb-1'>
         About me
       </p>
@@ -27,7 +26,6 @@ function About() {
 
       <Separator className='my-8' />
 
-      {/* CTAs */}
       <div className='flex gap-3'>
         <Button variant='outline' asChild>
           <a href='assets/cv.pdf' download='Ibrahim-Kemal-CV.pdf'>

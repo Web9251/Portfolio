@@ -15,7 +15,7 @@ const categories = [
       { name: "React / Next.js", level: 95 },
       { name: "TypeScript", level: 90 },
       { name: "Tailwind CSS", level: 92 },
-      { name: "PostgreSQL", level: 80 },
+      { name: "PostgreSQL", level: 85 },
     ],
   },
 

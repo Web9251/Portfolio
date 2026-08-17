@@ -2,13 +2,6 @@
 
 import { useEffect, useState } from "react"
 
-const roles = [
-  "full-stack apps",
-  "fast UIs with React",
-  "scalable APIs",
-  "things people love",
-]
-
 export function useTypingEffect(
   words: string[],
   speed: number = 80,
@@ -39,7 +32,7 @@ export function useTypingEffect(
     }, delay)
 
     return () => clearTimeout(timer)
-  }, [charIdx, deleting, wordIdx])
+  }, [charIdx, deleting, wordIdx, pause, speed, words])
 
   return displayed
 }

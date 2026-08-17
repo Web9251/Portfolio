@@ -10,7 +10,7 @@ import {
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { ProjectCard } from "@/components/ProjectCard"
+import { ProjectCard } from "@/components/home/ProjectCard"
 import { FadeIn } from "../motion/FadeIn"
 import { projects } from "@/constants"
 

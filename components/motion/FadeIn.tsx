@@ -10,10 +10,6 @@ interface FadeInProps {
   y?: number
 }
 
-// Wrap any section:
-// ...
-
-// Fires once when ~15% scrolled into view, never replays.
 export function FadeIn({
   children,
   className,
@@ -30,27 +26,5 @@ export function FadeIn({
     >
       {children}
     </motion.div>
-  )
-}
-
-// Optional: for staggered grids (e.g. project cards), wrap each child
-// with an incrementing delay instead of animating the whole grid at once.
-export function FadeInStagger({
-  children,
-  className,
-  staggerDelay = 0.08,
-}: {
-  children: ReactNode[]
-  className?: string
-  staggerDelay?: number
-}) {
-  return (
-    <div className={className}>
-      {children.map((child, i) => (
-        <FadeIn key={i} delay={i * staggerDelay}>
-          {child}
-        </FadeIn>
-      ))}
-    </div>
   )
 }
