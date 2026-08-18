@@ -8,7 +8,7 @@ import {
 
 function NavMenu({ hash }: { hash: string }) {
   return (
-    <NavigationMenu className=' bg-muted p-0.5 rounded-full'>
+    <NavigationMenu className='hidden lg:flex bg-muted p-0.5 rounded-full'>
       <NavigationMenuList className='flex gap-0'>
         {navigationData.map((navItem) => (
           <NavigationMenuItem key={navItem.title}>
