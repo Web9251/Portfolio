@@ -40,10 +40,8 @@ export const projects = [
   },
   {
     title: "Resume — AI Powered resume generator",
-    description: `AI-powered cover letter generator built with Next.js, 
-Gemini 2.5, and Prisma. Paste your resume and job 
-description to get a tailored, professional cover letter 
-in seconds — with generation history and saved resumes.`,
+    description: `AI-powered cover letter generator, paste your resume and job 
+description to get a professional cover letter in seconds.`,
     tags: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
     category: "AI / Machine Learning",
     image: coverLetter,
